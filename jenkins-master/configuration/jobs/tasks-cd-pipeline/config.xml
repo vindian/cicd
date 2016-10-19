@@ -5,7 +5,7 @@
   <keepDependencies>false</keepDependencies>
   <properties/>
   <definition class="org.jenkinsci.plugins.workflow.cps.CpsFlowDefinition" plugin="workflow-cps@2.0">
-    <script>node(&apos;jdk8&apos;) {
+    <script>node {
    // define commands
    def mvnHome = tool &apos;M3&apos;
    def mvnCmd = &quot;${mvnHome}/bin/mvn -s ${env.JENKINS_HOME}/settings.xml&quot;
